@@ -8,6 +8,6 @@
 //     return x + y ;
 // };
 // ラムダ式 (-> 関数が一つの return文で構成されている場合は, 更に省略される)
-var add = function (x, y) { return x + y; };
+const add = (x, y) => x + y;
 // add関数を呼び出してみる
 console.log(add(10, 5));

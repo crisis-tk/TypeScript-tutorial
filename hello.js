@@ -9,7 +9,7 @@ document.body.innerHTML = getMessage('TypeScript');
 // 2.13 ジェネリクス（型パラメータ）
 // -> 関数・クラス、インターフェイスを汎用的に作るための仕組み.
 function getMessage(target) {
-    var message = 'Hello';
+    const message = 'Hello';
     return message + target;
 }
 document.body.innerHTML = getMessage('TypeScript');

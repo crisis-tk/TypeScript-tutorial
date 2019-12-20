@@ -11,16 +11,15 @@ function HelloWorld() {
         console.log('Decorator Call!!');
     };
 }
-var TargetClass = /** @class */ (function () {
-    function TargetClass() {
+let TargetClass = class TargetClass {
+    constructor() {
         console.log('Constractor Call!!');
     }
-    TargetClass = __decorate([
-        HelloWorld()
-    ], TargetClass);
-    return TargetClass;
-}());
-var tg = new TargetClass();
+};
+TargetClass = __decorate([
+    HelloWorld()
+], TargetClass);
+const tg = new TargetClass();
 // デコーレーターは実験的な仕様
 // なのでコンパイルするときにオプション指定(--experimentalDecorators --target ES5)が必要
 //
